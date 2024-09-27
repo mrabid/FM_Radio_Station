@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="fm.ProgramListController">
+   <children>
+      <Label layoutX="238.0" layoutY="27.0" text="All Program List">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="programList" layoutX="30.0" layoutY="65.0" prefHeight="216.0" prefWidth="541.0" />
+      <Label layoutX="30.0" layoutY="324.0" text="Confirm with the program name to determine the program" />
+      <TextField fx:id="programName" layoutX="443.0" layoutY="319.0" prefHeight="31.0" prefWidth="45.0" />
+      <Button fx:id="ConfirmButton" layoutX="30.0" layoutY="355.0" mnemonicParsing="false" onAction="#ConfirmButtonOnAction" prefHeight="31.0" prefWidth="74.0" text="Confirm" />
+      <Button fx:id="backButton" layoutX="521.0" layoutY="355.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="31.0" prefWidth="63.0" text="Back" />
+      <Label layoutX="121.0" layoutY="360.0" text="***Collect OTP code to pay the Bill***" />
+      <Button fx:id="viewButton" layoutX="30.0" layoutY="288.0" mnemonicParsing="false" onAction="#viewButtonOnAction" prefHeight="31.0" prefWidth="74.0" text="View" />
+   </children>
+</AnchorPane>
