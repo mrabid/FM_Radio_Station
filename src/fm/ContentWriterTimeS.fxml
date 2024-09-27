@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="fm.ContentWriterTimeSController">
+   <children>
+      <Label layoutX="124.0" layoutY="25.0" text="Set Content Writer Working Time">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="84.0" text="Content Writer name" />
+      <Label layoutX="56.0" layoutY="129.0" text="Program Name" />
+      <Label layoutX="56.0" layoutY="171.0" text="Start Time" />
+      <Label layoutX="54.0" layoutY="211.0" text="End TIme" />
+      <Label layoutX="54.0" layoutY="255.0" text="Date" />
+      <TextField fx:id="ContentWriterName" layoutX="206.0" layoutY="79.0" />
+      <TextField fx:id="programName" layoutX="206.0" layoutY="124.0" />
+      <TextField fx:id="starttime" layoutX="207.0" layoutY="166.0" />
+      <TextField fx:id="endTime" layoutX="207.0" layoutY="206.0" />
+      <TextField fx:id="date" layoutX="206.0" layoutY="250.0" />
+      <Button fx:id="saveButton" layoutX="58.0" layoutY="345.0" mnemonicParsing="false" onAction="#SaveButtonOnAction" prefHeight="31.0" prefWidth="54.0" text="Save" />
+      <Button fx:id="backButton" layoutX="515.0" layoutY="345.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="31.0" prefWidth="54.0" text="Back" />
+   </children>
+</AnchorPane>
